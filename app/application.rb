@@ -1,4 +1,4 @@
-class Application 
+class Application
 
   def call(env)
     resp = Rack::Response.new
@@ -6,8 +6,8 @@ class Application
       resp.write "Good Morning!"
     elsif TIme.new.hour > 12
       resp.write "Good Afternoon!"
-    end 
+    end
     resp.finish
-  end 
+  end
 
 end 
