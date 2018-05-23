@@ -7,7 +7,6 @@ class Application
     elsif Time.new.hour >= 12
       resp.write "Good Afternoon!"
     end
-  binding.pry
     resp.finish
   end
 
